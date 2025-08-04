@@ -4,6 +4,8 @@
         "source": "/BottomNav",
         "destination": "/BottomNav.html"
       }
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
   
