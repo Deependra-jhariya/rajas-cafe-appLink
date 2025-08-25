@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Open App</title>
+  <title>Open RajasCafe</title>
+  <script>
+    window.onload = function () {
+      // Your app deep link (must be configured in app.json / AndroidManifest.xml)
+      var appScheme = "rajascafe://BottomNav";  
+
+      // Play Store fallback (replace with your real Play Store link)
+      var playStoreLink = "https://play.google.com/store/apps/details?id=com.rajascafe";  
+
+      // Try to open the app
+      window.location = appScheme;
+
+      // If not installed, open Play Store after delay
+      setTimeout(function () {
+        window.location = playStoreLink;
+      }, 1500);
+    };
+  </script>
 </head>
 <body>
-  <h1>Open in App</h1>
-  <p>If the app didn't open automatically, click below:</p>
-  <a href="https://rajas-cafe-app-link-git-main-deependrajhariyas-projects.vercel.app/BottomNav">
-    Open in RajasCafe App
-  </a>  
+  <h1>Opening RajasCafe...</h1>
+  <p>If nothing happens, <a href="https://play.google.com/store/apps/details?id=com.rajascafe">click here</a> to download.</p>
 </body>
 </html>
